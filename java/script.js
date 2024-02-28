@@ -1,27 +1,3 @@
-// alert("This is alert");
- 
-// let Number = 90;
-
-// if (typeof Number =="number" && Number >= 100) {
-//     console.log("Number is invalid");
-// }else if (typeof Number =="number" && Number >= 90) {
-//     console.log("A+");
-// }else if (typeof Number =="number" && Number >= 80){
-//     console.log("A")
-// }else if (typeof Number =="number" && Number >= 70){
-//     console.log("A-")
-// }else if (typeof Number =="number" && Number >= 60){
-//     console.log("B")
-// }else if (typeof Number =="number" && Number >= 50){
-//     console.log("C")
-// }else if (typeof Number =="number" && Number >= 40){
-//     console.log("D")
-// }else if (typeof Number =="number" && Number >= 33){
-//     console.log("E")
-// }else{
-//     console.log("F")
-// }
-
 function processInput() {
     let textInput = document.getElementById('textInput');
     let Number = textInput.value;
@@ -48,3 +24,39 @@ function processInput() {
         outputElement.textContent = "F";
     }
   }
+
+
+
+// let a = 86;
+
+// switch(true){
+//     case (a>91 && a<100):
+//         console.log("A+")
+//         break
+//     case (a>81 && a<90):
+//         console.log("A")
+//         break
+//     case (a>71 && a<80):
+//         console.log("A-")
+//         break
+//     case (a>61 && a<70):
+//         console.log("B")
+//         break
+//     case (a>51 && a<60):
+//         console.log("C")
+//         break
+//     case (a>41 && a<50):
+//         console.log("D")
+//         break
+//     case (a>33 && a<40):
+//         console.log("E")
+//     default: console.log("F")
+// }
+
+
+
+
+
+for (let i=1; i<100; i=i+2){
+    console.log(i);
+}
