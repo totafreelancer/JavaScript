@@ -57,6 +57,92 @@ function processInput() {
 
 
 
-for (let i=1; i<100; i=i+2){
-    console.log(i);
-}
+// for (let i=1; i<100; i=i+2){
+//     console.log(i);
+// }
+
+
+// let a = 1
+// for (let i=1; i<6; i++){
+//     a = a*i;
+// }
+// console.log(a)
+
+
+
+
+
+
+// function createPyramid(tota) {
+//     for (let i = 1; i<=tota; i++) {
+//         let pattern = '';
+//         for (let j = 1; j<=tota-i; j++) {
+//             pattern += ' ';
+//         }
+//         for (let k=1; k<=2*i-1; k++) {
+//             pattern += '*';
+//         }
+//         console.log(pattern);
+//     }
+// }
+
+// createPyramid(5);
+
+
+// let n = 5;
+// for (let i=1; i<=n; i++) {
+//     for (let j = 1; j <= n - i; j++) {
+//         process.stdout.write(' ')
+//     }
+//     for (let k=0; k<2*i-1; k++) {
+//         process.stdout.write('Tota ')
+//     }
+// console.log();
+// }
+
+// function generatePyramid() {
+//     var totalNumberofRows = 5;
+//     var arr = new Array();
+//     for (var i = 1; i <= totalNumberofRows; i++) {
+//       for (var j = 1; j <= i; j++) {
+//         arr.push(j);
+//         console.log(j);
+//       }
+//       console.log("\n");
+//     }
+//   }
+
+// generatePyramid(1);
+
+
+function createPyramid() {
+  const rows = document.getElementById('rowsInput').valueAsNumber;
+  const pyramidContainer = document.getElementById('pyramidContainer');
+  pyramidContainer.innerHTML = ''; // Clear previous content
+
+  for (let i = 0; i < rows; i++) {
+    let row = '';
+    for (let j = 0; j < rows - i - 1; j++) {
+      row += '&nbsp;'; // Add spaces for alignment
+    }
+    for (let k = 0; k < 2 * i + 1; k++) {
+      row += '*'; // Add stars
+    }
+    row += '<br>'; // Line break for the next row
+    pyramidContainer.innerHTML += row;
+  }
+};
+
+
+// function NumberPlass(y, x) {
+//   let number = y*x;
+//   console.log(number)
+// };
+// NumberPlass(15, 55)
+
+// function thardNumber (x, y) {
+//   for(x; x<y; x++){
+//     console.log(x/3)
+//   };
+// }
+// thardNumber(1, 7)
