@@ -146,3 +146,124 @@ function createPyramid() {
 //   };
 // }
 // thardNumber(1, 7)
+
+
+// Star marking
+// function starMar() {
+//   const stars = document.querySelectorAll('.star');
+//   const ratingValue = document.getElementById('ratingValue');
+
+//   stars.forEach((star) => {
+//     star.addEventListener('click', setRating);
+//   });
+
+//   function setRating(e) {
+//     const clickedStar = e.target;
+//     const rating = clickedStar.getAttribute('data-value');
+
+//     ratingValue.textContent = `You rated ${rating} stars!`;
+
+//     stars.forEach((star) => {
+//       if (parseInt(star.getAttribute('data-value')) <= parseInt(rating)) {
+//         star.classList.add('active');
+//       } else {
+//         star.classList.remove('active');
+//       }
+//     });
+//   }
+// }
+// starMar()
+
+// function Closuress(){
+//   function compareValues(a, b, c) {
+//     let max = Math.max(a, b, c);
+//     let min = Math.min(a, b, c);
+//     let oddEven = {
+//         a: a % 2 === 0 ? 'even' : 'odd',
+//         b: b % 2 === 0 ? 'even' : 'odd',
+//         c: c % 2 === 0 ? 'even' : 'odd'
+//     };
+  
+//     console.log(`Maximum value: ${max}`);
+//     console.log(`Minimum value: ${min}`);
+//     console.log(`a is ${oddEven.a}`);
+//     console.log(`b is ${oddEven.b}`);
+//     console.log(`c is ${oddEven.c}`)
+//   }
+//   compareValues(10, 5, 8);
+  
+  
+//   function maxminodd(valuA, valuB, valuC) {
+//     let max = valuA;
+//     let min = valuA;
+//     for (let value of [valuB, valuC]) {
+//         if (value > max) {
+//             max = value;
+//         }
+//         if (value < min) {
+//             min = value;
+//         }
+//     }
+//     let oddEven = {};
+//     for (let [name, value] of Object.entries({valuA, valuB, valuC})) {
+//         oddEven[name] = value % 2 === 0 ? 'even' : 'odd';
+//     }
+//     console.log(`Maximum value: ${max}`);
+//     console.log(`Minimum value: ${min}`);
+//     console.log(`a is ${oddEven.valuA}`);
+//     console.log(`b is ${oddEven.valuB}`);
+//     console.log(`c is ${oddEven.valuC}`);
+//   }
+//   maxminodd(10, 5, 8);
+  
+// }
+// Closuress()
+
+
+let variabol = function compareValues(a, b, c) {
+  let max = Math.max(a, b, c);
+  let min = Math.min(a, b, c);
+
+  console.log(`Maximum value: ${max}`);
+  console.log(`Minimum value: ${min}`);
+}
+variabol(10, 5, 8);
+
+let vararofun = (a, b, c) => {
+  let oddEven = {
+      a: a % 2 === 0 ? 'even' : 'odd',
+      b: b % 2 === 0 ? 'even' : 'odd',
+      c: c % 2 === 0 ? 'even' : 'odd'
+  };
+
+  console.log(`a is ${oddEven.a}`);
+  console.log(`b is ${oddEven.b}`);
+  console.log(`c is ${oddEven.c}`)
+}
+vararofun(10, 5, 8);
+
+function Closuress(){
+  function compareValues(a, b, c) {
+    let max = Math.max(a, b, c);
+    let min = Math.min(a, b, c);
+    let oddEven = {
+        a: a % 2 === 0 ? 'even' : 'odd',
+        b: b % 2 === 0 ? 'even' : 'odd',
+        c: c % 2 === 0 ? 'even' : 'odd'
+    };
+  
+    console.log(`Maximum value: ${max}`);
+    console.log(`Minimum value: ${min}`);
+    console.log(`a is ${oddEven.a}`);
+    console.log(`b is ${oddEven.b}`);
+    console.log(`c is ${oddEven.c}`)
+  }
+  compareValues(10, 5, 8);
+  
+}
+Closuress()
+
+
+let str = "123";
+let num = parseInt(str);
+console.log(typeof num, num); // Output: 123

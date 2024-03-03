@@ -5,3 +5,25 @@
 .pyramid {
     font-size: 3rem;
 }
+/* .ister {
+    padding-top: 2rem;
+}
+.ister i {
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.star_color {
+    color: #ffc400;
+} */
+
+.star {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #ddd;
+  }
+  
+.star:hover,
+.star.active {
+    color: rgb(255, 208, 0);
+  }
