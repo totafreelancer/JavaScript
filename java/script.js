@@ -220,50 +220,68 @@ function createPyramid() {
 // Closuress()
 
 
-let variabol = function compareValues(a, b, c) {
-  let max = Math.max(a, b, c);
-  let min = Math.min(a, b, c);
+// let variabol = function compareValues(a, b, c) {
+//   let max = Math.max(a, b, c);
+//   let min = Math.min(a, b, c);
 
-  console.log(`Maximum value: ${max}`);
-  console.log(`Minimum value: ${min}`);
-}
-variabol(10, 5, 8);
+//   console.log(`Maximum value: ${max}`);
+//   console.log(`Minimum value: ${min}`);
+// }
+// variabol(10, 5, 8);
 
-let vararofun = (a, b, c) => {
-  let oddEven = {
-      a: a % 2 === 0 ? 'even' : 'odd',
-      b: b % 2 === 0 ? 'even' : 'odd',
-      c: c % 2 === 0 ? 'even' : 'odd'
+// let vararofun = (a, b, c) => {
+//   let oddEven = {
+//       a: a % 2 === 0 ? 'even' : 'odd',
+//       b: b % 2 === 0 ? 'even' : 'odd',
+//       c: c % 2 === 0 ? 'even' : 'odd'
+//   };
+
+//   console.log(`a is ${oddEven.a}`);
+//   console.log(`b is ${oddEven.b}`);
+//   console.log(`c is ${oddEven.c}`)
+// }
+// vararofun(10, 5, 8);
+
+// function Closuress(){
+//   function compareValues(a, b, c) {
+//     let max = Math.max(a, b, c);
+//     let min = Math.min(a, b, c);
+//     let oddEven = {
+//         a: a % 2 === 0 ? 'even' : 'odd',
+//         b: b % 2 === 0 ? 'even' : 'odd',
+//         c: c % 2 === 0 ? 'even' : 'odd'
+//     };
+  
+//     console.log(`Maximum value: ${max}`);
+//     console.log(`Minimum value: ${min}`);
+//     console.log(`a is ${oddEven.a}`);
+//     console.log(`b is ${oddEven.b}`);
+//     console.log(`c is ${oddEven.c}`)
+//   }
+//   compareValues(10, 5, 8);
+  
+// }
+// Closuress()
+
+
+// let str = "123";
+// let num = parseInt(str);
+// console.log(typeof num, num); // Output: 123
+
+
+class studen {
+  constructor(Name, Class, Rol, Age) {
+    this.Name = Name;
+    this.Class = Class;
+    this.Rol = Rol;
+    this.Age = Age
   };
-
-  console.log(`a is ${oddEven.a}`);
-  console.log(`b is ${oddEven.b}`);
-  console.log(`c is ${oddEven.c}`)
-}
-vararofun(10, 5, 8);
-
-function Closuress(){
-  function compareValues(a, b, c) {
-    let max = Math.max(a, b, c);
-    let min = Math.min(a, b, c);
-    let oddEven = {
-        a: a % 2 === 0 ? 'even' : 'odd',
-        b: b % 2 === 0 ? 'even' : 'odd',
-        c: c % 2 === 0 ? 'even' : 'odd'
-    };
-  
-    console.log(`Maximum value: ${max}`);
-    console.log(`Minimum value: ${min}`);
-    console.log(`a is ${oddEven.a}`);
-    console.log(`b is ${oddEven.b}`);
-    console.log(`c is ${oddEven.c}`)
+  studenSit() {
+    console.log(`student name: ${this.Name} and student class: ${this.Class} and student roll: ${this.Rol} and student age: ${this.Age}`)
   }
-  compareValues(10, 5, 8);
-  
 }
-Closuress()
 
-
-let str = "123";
-let num = parseInt(str);
-console.log(typeof num, num); // Output: 123
+let Tota = new studen( "Tota", 12, 1, 22);
+let Motiur = new studen("Motiur", 12, 1, 22);
+Tota.studenSit();
+Motiur.studenSit();
