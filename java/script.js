@@ -269,19 +269,45 @@ function createPyramid() {
 // console.log(typeof num, num); // Output: 123
 
 
+/* ================= class ================== */
 class studen {
-  constructor(Name, Class, Rol, Age) {
+  constructor(Name, Class, Rol, Age, clgName) {
     this.Name = Name;
     this.Class = Class;
     this.Rol = Rol;
-    this.Age = Age
+    this.Age = Age;
+    this.clgName = clgName
   };
   studenSit() {
-    console.log(`student name: ${this.Name} and student class: ${this.Class} and student roll: ${this.Rol} and student age: ${this.Age}`)
+    console.log(`student name: ${this.Name} and student class: ${this.Class} and student roll: ${this.Rol} and student age: ${this.Age} and student clg: ${this.clgName}`);
   }
 }
 
-let Tota = new studen( "Tota", 12, 1, 22);
+let Tota = new studen("Tota", 12, 1, 22, "Rajshahi clg");
 let Motiur = new studen("Motiur", 12, 1, 22);
 Tota.studenSit();
 Motiur.studenSit();
+
+
+
+// class Car {
+//   constructor(brand) {
+//     this.carname = brand;
+//   }
+//   present() {
+//     return 'I have a ' + this.carname;
+//   }
+// }
+
+// class Model extends Car {
+//   constructor(brand, mod) {
+//     super(brand);
+//     this.model = mod;
+//   }
+//   show() {
+//     return this.present() + ', it is a ' + this.model;
+//   }
+// }
+
+// mycar = new Model("Ford", "Mustang");
+// document.getElementById("demo").innerHTML = mycar.show();
