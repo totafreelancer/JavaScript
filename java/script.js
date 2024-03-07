@@ -270,44 +270,99 @@ function createPyramid() {
 
 
 /* ================= class ================== */
-class studen {
-  constructor(Name, Class, Rol, Age, clgName) {
-    this.Name = Name;
-    this.Class = Class;
-    this.Rol = Rol;
-    this.Age = Age;
-    this.clgName = clgName
-  };
-  studenSit() {
-    console.log(`student name: ${this.Name} and student class: ${this.Class} and student roll: ${this.Rol} and student age: ${this.Age} and student clg: ${this.clgName}`);
+// class studen {
+//   constructor(Name, Class, Rol, Age, clgName) {
+//     this.Name = Name;
+//     this.Class = Class;
+//     this.Rol = Rol;
+//     this.Age = Age;
+//     this.clgName = clgName
+//   };
+//   studenSit() {
+//     console.log(`student name: ${this.Name} and student class: ${this.Class} and student roll: ${this.Rol} and student age: ${this.Age} and student clg: ${this.clgName}`);
+//   }
+// }
+
+// let Tota = new studen("Tota", 12, 1, 22, "Rajshahi clg");
+// let Motiur = new studen("Motiur", 12, 1, 22);
+// Tota.studenSit();
+// Motiur.studenSit();
+
+
+
+
+
+// ২ গাড়ি 
+// ১ম   গাড়িতে টায়ার ৫, গ্লাস ৩, স্টিয়ারিং  ১ লাগে 
+// ২য় গাড়িতে  টায়ার ৪, গ্লাস ৪, স্টিয়ারিং  ১ লাগে 
+// সবাইকে  টায়ার ৫০, গ্লাস ৩০, স্টিয়ারিং  ১০ দেয়া হলে 
+// ১ম কয়টি গাড়ি হবে এবং ২য় গাড়ি হবে?
+// জাভাস্ক্রিপ ক্লাস ব্যবহার করো 
+
+class Car {
+  constructor(tires, glass, steering) {
+      this.tires = tires;
+      this.glass = glass;
+      this.steering = steering;
+  }
+
+  static calculateCars(car, Tires, Glass, Steering) {
+      const maxCarsByTires = Tires / car.tires;
+      const maxCarsByGlass = Glass / car.glass;
+      const maxCarsBySteering = Steering / car.steering;
+
+      return Math.min(maxCarsByTires, maxCarsByGlass, maxCarsBySteering);
   }
 }
 
-let Tota = new studen("Tota", 12, 1, 22, "Rajshahi clg");
-let Motiur = new studen("Motiur", 12, 1, 22);
-Tota.studenSit();
-Motiur.studenSit();
+const car1 = new Car(5, 3, 1);
+const car2 = new Car(4, 4, 1);
+
+const totalTires = 500;
+const totalGlass = 300;
+const totalSteering = 100;
+
+const car1Count = Car.calculateCars(car1, totalTires, totalGlass, totalSteering);
+const car2Count = Car.calculateCars(car2, totalTires, totalGlass, totalSteering);
+
+console.log(`1st car no: ${car1Count} car`);
+console.log(`2nd car no: ${car2Count} car`);
 
 
+// ২ গাড়ি 
+// ১ম   গাড়িতে টায়ার ৫, গ্লাস ৩, স্টিয়ারিং  ১ লাগে 
+// ২য় গাড়িতে  টায়ার ৪, গ্লাস ৪, স্টিয়ারিং  ১ লাগে 
+// সবাইকে  টায়ার ৫০, গ্লাস ৩০, স্টিয়ারিং  ১০ দেয়া হলে 
+// ১ম কয়টি গাড়ি হবে এবং ২য় গাড়ি হবে?
+// জাভাস্ক্রিপ ক্লাস ব্যবহার করো 
 
-// class Car {
-//   constructor(brand) {
-//     this.carname = brand;
-//   }
-//   present() {
-//     return 'I have a ' + this.carname;
-//   }
-// }
 
-// class Model extends Car {
-//   constructor(brand, mod) {
-//     super(brand);
-//     this.model = mod;
-//   }
-//   show() {
-//     return this.present() + ', it is a ' + this.model;
-//   }
-// }
-
-// mycar = new Model("Ford", "Mustang");
-// document.getElementById("demo").innerHTML = mycar.show();
+class Car {
+  constructor (piece){
+    piece
+    this.car
+  };
+  bmw(piece){
+    let tyre = piece/5;
+    let look = piece/3;
+    let str = piece
+    if(tyre<look && look<str){
+      this.car = console.log(tyre);
+    }else{
+      this.car = console.log(`not enough tyre`);
+    }
+  };
+  audi (piece){
+    let tyre1 = piece/4;
+    let look1 = piece/4;
+    let str1 = piece
+    if(tyre1<look1 && look1<str1){
+      this.car = console.log(tyre1);
+    }else{
+      this.car = console.log(`not enough tyre`);
+    }
+  };
+}
+const BMW = new Car;
+const AUD = new Car;
+console.log(AUD.audi(100),BMW.bmw(100));
