@@ -337,32 +337,32 @@ console.log(`2nd car no: ${car2Count} car`);
 // জাভাস্ক্রিপ ক্লাস ব্যবহার করো 
 
 
-class Car {
-  constructor (piece){
-    piece
-    this.car
-  };
-  bmw(piece){
-    let tyre = piece/5;
-    let look = piece/3;
-    let str = piece
-    if(tyre<look && look<str){
-      this.car = console.log(tyre);
-    }else{
-      this.car = console.log(`not enough tyre`);
-    }
-  };
-  audi (piece){
-    let tyre1 = piece/4;
-    let look1 = piece/4;
-    let str1 = piece
-    if(tyre1<look1 && look1<str1){
-      this.car = console.log(tyre1);
-    }else{
-      this.car = console.log(`not enough tyre`);
-    }
-  };
-}
-const BMW = new Car;
-const AUD = new Car;
-console.log(AUD.audi(100),BMW.bmw(100));
+// class Car {
+//   constructor (piece){
+//     piece
+//     this.car
+//   };
+//   bmw(piece){
+//     let tyre = piece/5;
+//     let look = piece/3;
+//     let str = piece
+//     if(tyre<look && look<str){
+//       this.car = console.log(tyre);
+//     }else{
+//       this.car = console.log(`not enough tyre`);
+//     }
+//   };
+//   audi (piece){
+//     let tyre1 = piece/4;
+//     let look1 = piece/4;
+//     let str1 = piece
+//     if(tyre1<look1 && look1<str1){
+//       this.car = console.log(tyre1);
+//     }else{
+//       this.car = console.log(`not enough tyre`);
+//     }
+//   };
+// }
+// const BMW = new Car;
+// const AUD = new Car;
+// console.log(AUD.audi(100),BMW.bmw(100));
