@@ -3,7 +3,6 @@ function processInput() {
     let Number = textInput.value;
     let outputElement = document.getElementById('output');
 
-
     if (Number >= 100) {
         outputElement.textContent = "Number is invalid";
     }else if (Number >= 90) {
@@ -149,30 +148,30 @@ function createPyramid() {
 
 
 // Star marking
-// function starMar() {
-//   const stars = document.querySelectorAll('.star');
-//   const ratingValue = document.getElementById('ratingValue');
+function starMar() {
+  const stars = document.querySelectorAll('.star');
+  const ratingValue = document.getElementById('ratingValue');
 
-//   stars.forEach((star) => {
-//     star.addEventListener('click', setRating);
-//   });
+  stars.forEach((star) => {
+    star.addEventListener('click', setRating);
+  });
 
-//   function setRating(e) {
-//     const clickedStar = e.target;
-//     const rating = clickedStar.getAttribute('data-value');
+  function setRating(e) {
+    const clickedStar = e.target;
+    const rating = clickedStar.getAttribute('data-value');
 
-//     ratingValue.textContent = `You rated ${rating} stars!`;
+    ratingValue.textContent = `You rated ${rating} stars!`;
 
-//     stars.forEach((star) => {
-//       if (parseInt(star.getAttribute('data-value')) <= parseInt(rating)) {
-//         star.classList.add('active');
-//       } else {
-//         star.classList.remove('active');
-//       }
-//     });
-//   }
-// }
-// starMar()
+    stars.forEach((star) => {
+      if (parseInt(star.getAttribute('data-value')) <= parseInt(rating)) {
+        star.classList.add('active');
+      } else {
+        star.classList.remove('active');
+      }
+    });
+  }
+}
+starMar()
 
 // function Closuress(){
 //   function compareValues(a, b, c) {
