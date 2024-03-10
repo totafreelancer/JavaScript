@@ -148,30 +148,30 @@ function createPyramid() {
 
 
 // Star marking
-function starMar() {
-  const stars = document.querySelectorAll('.star');
-  const ratingValue = document.getElementById('ratingValue');
+// function starMar() {
+//   const stars = document.querySelectorAll('.star');
+//   const ratingValue = document.getElementById('ratingValue');
 
-  stars.forEach((star) => {
-    star.addEventListener('click', setRating);
-  });
+//   stars.forEach((star) => {
+//     star.addEventListener('click', setRating);
+//   });
 
-  function setRating(e) {
-    const clickedStar = e.target;
-    const rating = clickedStar.getAttribute('data-value');
+//   function setRating(e) {
+//     const clickedStar = e.target;
+//     const rating = clickedStar.getAttribute('data-value');
 
-    ratingValue.textContent = `You rated ${rating} stars!`;
+//     ratingValue.textContent = `You rated ${rating} stars!`;
 
-    stars.forEach((star) => {
-      if (parseInt(star.getAttribute('data-value')) <= parseInt(rating)) {
-        star.classList.add('active');
-      } else {
-        star.classList.remove('active');
-      }
-    });
-  }
-}
-starMar()
+//     stars.forEach((star) => {
+//       if (parseInt(star.getAttribute('data-value')) <= parseInt(rating)) {
+//         star.classList.add('active');
+//       } else {
+//         star.classList.remove('active');
+//       }
+//     });
+//   }
+// }
+// starMar()
 
 // function Closuress(){
 //   function compareValues(a, b, c) {
@@ -298,35 +298,34 @@ starMar()
 // ১ম কয়টি গাড়ি হবে এবং ২য় গাড়ি হবে?
 // জাভাস্ক্রিপ ক্লাস ব্যবহার করো 
 
-class Car {
-  constructor(tires, glass, steering) {
-      this.tires = tires;
-      this.glass = glass;
-      this.steering = steering;
-  }
+// class Car {
+//   constructor(tires, glass, steering) {
+//       this.tires = tires;
+//       this.glass = glass;
+//       this.steering = steering;
+//   }
 
-  static calculateCars(car, Tires, Glass, Steering) {
-      const maxCarsByTires = Tires / car.tires;
-      const maxCarsByGlass = Glass / car.glass;
-      const maxCarsBySteering = Steering / car.steering;
+//   static calculateCars(car, Tires, Glass, Steering) {
+//       const maxCarsByTires = Tires / car.tires;
+//       const maxCarsByGlass = Glass / car.glass;
+//       const maxCarsBySteering = Steering / car.steering;
 
-      return Math.min(maxCarsByTires, maxCarsByGlass, maxCarsBySteering);
-  }
-}
+//       return Math.min(maxCarsByTires, maxCarsByGlass, maxCarsBySteering);
+//   }
+// }
 
-const car1 = new Car(5, 3, 1);
-const car2 = new Car(4, 4, 1);
+// const car1 = new Car(5, 3, 1);
+// const car2 = new Car(4, 4, 1);
 
-const totalTires = 500;
-const totalGlass = 300;
-const totalSteering = 100;
+// const totalTires = 500;
+// const totalGlass = 300;
+// const totalSteering = 100;
 
-const car1Count = Car.calculateCars(car1, totalTires, totalGlass, totalSteering);
-const car2Count = Car.calculateCars(car2, totalTires, totalGlass, totalSteering);
+// const car1Count = Car.calculateCars(car1, totalTires, totalGlass, totalSteering);
+// const car2Count = Car.calculateCars(car2, totalTires, totalGlass, totalSteering);
 
-console.log(`1st car no: ${car1Count} car`);
-console.log(`2nd car no: ${car2Count} car`);
-
+// console.log(`1st car no: ${car1Count} car`);
+// console.log(`2nd car no: ${car2Count} car`);
 
 // ২ গাড়ি 
 // ১ম   গাড়িতে টায়ার ৫, গ্লাস ৩, স্টিয়ারিং  ১ লাগে 
@@ -365,3 +364,31 @@ console.log(`2nd car no: ${car2Count} car`);
 // const BMW = new Car;
 // const AUD = new Car;
 // console.log(AUD.audi(100),BMW.bmw(100));
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========== array ==========*/
+
+const Mylength = ['a', 'b', 'c', 'd','e', 'f', 'g', 'h'];
+
+console.log(Mylength.at(5));
+
+// 
+// Array.prototype.indexOf()
+// Array.prototype.join()
+// Array.prototype.some()
+// Array.prototype.lastIndexOf()
+// Array.prototype.toReversed()
+// Array.prototype.values()
+// Array.prototype.with()
+// 
