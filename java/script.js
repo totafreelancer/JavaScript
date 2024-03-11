@@ -1,28 +1,28 @@
-function processInput() {
-    let textInput = document.getElementById('textInput');
-    let Number = textInput.value;
-    let outputElement = document.getElementById('output');
+// function processInput() {
+//     let textInput = document.getElementById('textInput');
+//     let Number = textInput.value;
+//     let outputElement = document.getElementById('output');
 
-    if (Number >= 100) {
-        outputElement.textContent = "Number is invalid";
-    }else if (Number >= 90) {
-        outputElement.textContent = "A+";
-    }else if (Number >= 80){
-        outputElement.textContent = "A";
-    }else if (Number >= 70){
-        outputElement.textContent = "A-";
-    }else if (Number >= 60){
-        outputElement.textContent = "B";
-    }else if (Number >= 50){
-        outputElement.textContent = "c";
-    }else if (Number >= 40){
-        outputElement.textContent = "D";
-    }else if (Number >= 33){
-        outputElement.textContent = "E";
-    }else{
-        outputElement.textContent = "F";
-    }
-  }
+//     if (Number >= 100) {
+//         outputElement.textContent = "Number is invalid";
+//     }else if (Number >= 90) {
+//         outputElement.textContent = "A+";
+//     }else if (Number >= 80){
+//         outputElement.textContent = "A";
+//     }else if (Number >= 70){
+//         outputElement.textContent = "A-";
+//     }else if (Number >= 60){
+//         outputElement.textContent = "B";
+//     }else if (Number >= 50){
+//         outputElement.textContent = "c";
+//     }else if (Number >= 40){
+//         outputElement.textContent = "D";
+//     }else if (Number >= 33){
+//         outputElement.textContent = "E";
+//     }else{
+//         outputElement.textContent = "F";
+//     }
+//   }
 
 
 
@@ -114,23 +114,23 @@ function processInput() {
 // generatePyramid(1);
 
 
-function createPyramid() {
-  const rows = document.getElementById('rowsInput').valueAsNumber;
-  const pyramidContainer = document.getElementById('pyramidContainer');
-  pyramidContainer.innerHTML = ''; // Clear previous content
+// function createPyramid() {
+//   const rows = document.getElementById('rowsInput').valueAsNumber;
+//   const pyramidContainer = document.getElementById('pyramidContainer');
+//   pyramidContainer.innerHTML = ''; // Clear previous content
 
-  for (let i = 0; i < rows; i++) {
-    let row = '';
-    for (let j = 0; j < rows - i - 1; j++) {
-      row += '&nbsp;'; // Add spaces for alignment
-    }
-    for (let k = 0; k < 2 * i + 1; k++) {
-      row += '*'; // Add stars
-    }
-    row += '<br>'; // Line break for the next row
-    pyramidContainer.innerHTML += row;
-  }
-};
+//   for (let i = 0; i < rows; i++) {
+//     let row = '';
+//     for (let j = 0; j < rows - i - 1; j++) {
+//       row += '&nbsp;'; // Add spaces for alignment
+//     }
+//     for (let k = 0; k < 2 * i + 1; k++) {
+//       row += '*'; // Add stars
+//     }
+//     row += '<br>'; // Line break for the next row
+//     pyramidContainer.innerHTML += row;
+//   }
+// };
 
 
 // function NumberPlass(y, x) {
@@ -379,9 +379,9 @@ function createPyramid() {
 
 /*========== array ==========*/
 
-const Mylength = ['a', 'b', 'c', 'd','e', 'f', 'g', 'h'];
+// const Mylength = ['a', 'b', 'c', 'd','e', 'f', 'g', 'h'];
 
-console.log(Mylength.at(5));
+// console.log(Mylength.at(5));
 
 // 
 // Array.prototype.indexOf()
@@ -392,3 +392,16 @@ console.log(Mylength.at(5));
 // Array.prototype.values()
 // Array.prototype.with()
 // 
+
+const texts = [`a`,`b`,`c`,`d`,`e`,`f`,`g`,`h`,`i`,`j`,`k`,`l`,`m`,`n`,`o`,`p`,`q`,`r`,`s`]
+
+const text1 = texts.slice(2, 10,);
+console.log(text1);
+console.log(texts.pop());
+console.log(texts);
+console.log(texts.shift());
+console.log(texts);
+console.log(texts.push("last"));
+console.log(texts);
+console.log(texts.unshift("past"));
+console.log(texts);
