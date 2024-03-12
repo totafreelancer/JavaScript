@@ -391,9 +391,9 @@
 // Array.prototype.toReversed()
 // Array.prototype.values()
 // Array.prototype.with()
-// 
+// Array.of()
 
-const texts = [`a`,`b`,`c`,`d`,`e`,`f`,`g`,`h`,`i`,`j`,`k`,`l`,`m`,`n`,`o`,`p`,`q`,`r`,`s`]
+/* ===== const texts = [`a`,`b`,`c`,`d`,`e`,`f`,`g`,`h`,`i`,`j`,`k`,`l`,`m`,`n`,`o`,`p`,`q`,`r`,`s`]
 
 const text1 = texts.slice(2, 10,);
 console.log(text1);
@@ -404,4 +404,23 @@ console.log(texts);
 console.log(texts.push("last"));
 console.log(texts);
 console.log(texts.unshift("past"));
-console.log(texts);
+console.log(texts); */
+
+
+// const Map = [10, 20, 30];
+// const Map2 =[]
+// for (let value of Map) {
+//     Map2.push(value+2)
+// }
+// console.log(Map2);
+
+
+// const Map1 = [1, 2, 3]
+// const Map2 = Map1.map(value => value +2);
+// console.log(Map2)
+
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+console.log(months);
+months.splice(2, 2, 'May', "agost");
+console.log(months);
