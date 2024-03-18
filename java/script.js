@@ -419,8 +419,49 @@ console.log(texts); */
 // const Map2 = Map1.map(value => value +2);
 // console.log(Map2)
 
-const months = ['Jan', 'March', 'April', 'June'];
-months.splice(1, 0, 'Feb');
-console.log(months);
-months.splice(2, 2, 'May', "agost");
-console.log(months);
+// const months = ['Jan', 'March', 'April', 'June'];
+// months.splice(1, 0, 'Feb');
+// console.log(months);
+// months.splice(2, 2, 'May', "agost");
+// console.log(months);
+
+/*============= Object ========== */
+// const Student = {
+//   Name:"Tota",
+//   Roll:"80",
+//   Ressalt: {
+//     Bangla: 25,
+//     English: 55,
+//     Math: 64,
+//     Ict: 80,
+//   }
+// }
+// Student.Ressalt.English = 10;
+
+// // const totalme = Student.Ressalt.Bangla + Student.Ressalt.English + Student.Ressalt.Math + Student.Ressalt.Ict
+// // console.log(totalme);
+
+// const totalResult = Object.values(Student.Ressalt).reduce((acc, curr) => acc + curr, 0);
+// const AllResal = Student.TotalResult = totalResult;
+// // console.log(Student);
+// const AllAns = "Name: " + Student.Name + " Roll: " + Student.Roll + " Ressalt: " + AllResal
+// document.getElementById("demo").innerHTML = AllAns;
+
+
+function ClickNow (){
+  const Student = {
+    Name:"Tota",
+    Roll:"80",
+    Ressalt: {
+      Bangla: 25,
+      English: 55,
+      Math: 64,
+      Ict: 80,
+    }
+  }
+  Student.Ressalt.English = 10;
+  const totalResult = Object.values(Student.Ressalt).reduce((acc, curr) => acc + curr, 0);
+  const AllResal = Student.TotalResult = totalResult;
+  const AllAns = "Name: " + Student.Name + " Roll: " + Student.Roll + " Ressalt: " + AllResal
+  document.getElementById("demo").innerHTML = AllAns;
+}
